@@ -1,0 +1,133 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: rgb(10, 3, 3);}
+
+html,body{height: 100%;
+width: 100%;}
+
+#main{height: 100%;
+width: 100%;
+background: linear-gradient(to right, rgba(92, 151, 176, 0.8), rgba(35, 41, 70, 0.8), rgba(82, 82, 134, 0.8)), url("https://i.pinimg.com/originals/96/89/4e/96894e76846428ae11816704c65c58ca.jpg");
+background-size: cover;
+background-position: center; }
+
+#valid{position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 2px solid rgb(10, 9, 9);
+border-radius: 10px;
+overflow: hidden;}
+
+#header{border-bottom: 2px solid black;
+font-size: 1.2vw ;
+background: linear-gradient(to right,rgb(61, 98, 114), rgb(63, 78, 148),rgb(82, 82, 177));}
+
+#header h1{padding:0.8vw 2.5vw;
+color:white;
+font-weight: 900;}
+
+#control{position: relative;
+    padding: 1.2vw 1.5vw;}
+
+#control label{text-transform: uppercase;
+letter-spacing: .4px;
+color: white;
+font-weight:700;}
+
+#control input{width: 100%;
+   height: 2.5vw;
+   text-transform: capitalize;
+   border-radius: 4px;
+   padding: 0 1.5vw;
+   transition: ram 1 ease-in-out ;
+   border: 1px solid black;}
+
+#control input:hover{border: 2px solid black;}
+
+/* important part for i */
+#control.success input{border-color: #2ecc71;
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.7);}
+#control.error input{border-color: #e74c3c;
+box-shadow: 0 0 8px rgba(231, 76, 60, 0.7);}
+
+#control.success i.fa-circle-check{visibility: visible;
+    color: #2ecc71;}
+#control.error i.fa-circle-exclamation{visibility: visible;
+    color: #e74c3c;}
+
+#control.error small{visibility: visible;}
+#control i{position: absolute;
+    right: 8%;
+    top:50px;
+    visibility: hidden;}
+
+#control small{position: absolute;
+        color: #e74c3c;
+        visibility: hidden;
+        left: 6%;
+        top: 90%;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: capitalize;}
+
+/* important part end for i  */
+
+
+.btn{background: linear-gradient(to right,rgb(137, 126, 181), rgb(71, 87, 158),rgb(123, 123, 173));
+width: 90%;
+padding:0.8vw 1vw;
+margin: 1.5vw;
+color: white;
+outline: none;
+border: 1px solid black;
+font-weight: 700;
+font-size:1.5vw ;
+border-radius: 8px;
+text-transform: uppercase;}
+
+.btn:hover{background: linear-gradient(to right,rgb(58, 58, 115), rgb(99, 113, 177),rgb(36, 36, 127));
+color: whitesmoke;}
+
+
+
+/* responsing code  */
+@media screen and (max-width: 600px) {
+    #valid{width: 70%;
+    height: 83%;}
+
+    #header h1{font-size: 5.5vw;
+    padding: 3.5vw 4vw;}
+
+    #control{padding: 5vw 3vw;}
+
+    #control input{height: 8vw;
+        width: 100%;
+        border: none;
+        padding: 0.4vw 1.5vw;
+        font-size: 3.4vw;}
+
+#control.success input{border-color: #2ecc71;}
+
+    #control label{font-size: 3.5vw;
+    padding-left: 1vw;}
+
+    #control i{top: 12vw;
+    font-size: 3.2vw;}
+
+    #control small{top: 18.3vw;
+    font-size: 4vw;}
+
+    .btn{font-size: 4vw;
+    padding: 3vw;
+    margin:4.2vw 3vw;
+    width: 90%;}
+
+
+}
+
+
+
+
+
